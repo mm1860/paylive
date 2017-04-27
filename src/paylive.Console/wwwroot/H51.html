@@ -1,0 +1,129 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <script charset="utf-8" src="http://map.qq.com/api/js?v=2.exp"></script>
+    <script type="text/javascript" src="https://3gimg.qq.com/lightmap/components/geolocation/geolocation.min.js"></script>
+    <style type="text/css">
+        html,
+        body {
+            font: normal 100% Helvetica, Arial, sans-serif;
+            height: 100%;
+            margin: 0px;
+            padding: 0px;
+            text-align: center
+        }
+
+        #container {
+            height: 100%;
+            width: 100%;
+        }
+
+        body div {
+            line-height: 22px;
+            text-indent: 20px;
+        }
+
+        .nav {
+            
+            bottom: 0;
+            height: 30px;
+            margin: 30px auto;
+            position: fixed;
+            text-align: center;
+            width: 100%;
+        }
+
+        
+        .btn {
+            background-color: #D2340F;
+            border-radius: 30px;
+            color: white;
+            font-family: 宋体;
+            font-size: 15px;
+            padding: 10px 13px;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        .btn-signup { background-color: #006DCC; }
+
+        .btn-signup:hover { background-color: rgb(0, 74, 204); }
+
+
+    </style>
+</head>
+
+<body onload="init()">
+<div id="container"></div>
+<div class="nav"><a class="btn btn-signup" href="#">刷新</a><a class="btn btn-signup" href="#">扫码充电</a><a class="btn btn-signup" href="#">客服</a></div>
+<script type="text/javascript">
+
+    //定位
+    function init() {
+        var geolocation = new qq.maps.Geolocation("OB4BZ-D4W3U-B7VVO-4PJWW-6TKDJ-WPB77", "myapp");
+        geolocation.getLocation(showPosition);
+    }
+
+    function showPosition(position) {
+        //定位坐标
+        var center = new qq.maps.LatLng(position.lat, position.lng);
+        //div容器
+        var container = document.getElementById("container");
+        //初始化地图
+        var map = new qq.maps.Map(container,
+        {
+            // 地图的中心地理坐标
+            center: center,
+            zoom: 13,
+            disableDefaultUI: true //禁止所有控件
+        });
+        //创建一个圆形
+        new qq.maps.Circle({
+            map: map,
+            center: center,
+            radius: 1000,
+            fillColor: new qq.maps.Color(0,15,255, 0.2),
+            strokeWeight: 0
+        });
+        //当地图中心属性更改时触发事件，拖动地图会触发
+        qq.maps.event.addListener(map,
+            'center_changed',
+            function () {
+                center = map.getCenter();
+            });
+        //当地图缩放时触发事件
+        qq.maps.event.addListener(
+            map,
+            'zoom_changed',
+            function () {
+                //设置地图中心位置
+                map.setCenter(center);
+            }
+        );
+        //创建图钉
+        var point = document.createElement("div");
+        var height = document.body.scrollHeight;
+        var width = document.body.scrollWidth;
+        var marginTop = height / 2 - 18;
+        var marginLeft = width / 2 - 18;
+        point.style.margin = marginTop + "px " + marginLeft + "px";
+        point.style.position = "relative";
+        point.style.width = "36px";
+        point.style.height = "36px";
+        point.style.zIndex = "100000";
+        point
+            .innerHTML =
+            '<img style="float:left;" src="https://www.cdlhome.com.sg/mobile_assets/images/icon-location.png" />';
+        document.getElementById("container").appendChild(point);
+
+        
+    }
+
+</script>
+</body>
+
+</html>

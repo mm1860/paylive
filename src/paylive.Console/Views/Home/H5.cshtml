@@ -1,0 +1,89 @@
+﻿@{
+    ViewData["Title"] = "Contact";
+    Layout = null;
+}
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <script charset="utf-8" src="http://map.qq.com/api/js?v=2.exp"></script>
+    <style type="text/css">
+        html,
+        body {
+            height: 100%;
+            margin: 0px;
+            padding: 0px;
+            text-align:center
+        }
+
+        #container {
+            width: 100%;
+            height: 100%;
+        }
+
+        body div {
+            text-indent: 20px;
+            line-height: 22px;
+        }
+
+        .nav {
+            width: 100%;
+            height: 30px;
+            margin: 0 auto;
+            background: #f00;
+            position: fixed;
+            bottom: 0;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body onload="init()">
+    <div id="container"></div>
+    <div style="height:22px;"></div>
+    <div id="fitBoundsDiv"></div>
+    <div id="centerDiv"></div>
+    <div id="zoomDiv"></div>
+    <div id="containerDiv"></div>
+    <div id="mapTypeIdDiv"></div>
+    <div id="projection"></div>
+    <div class="nav">导航</div>
+    <script type="text/javascript">
+        function init() {
+            //div容器
+            var container = document.getElementById("container");
+            var centerDiv = document.getElementById("centerDiv");
+
+            //初始化地图
+            var map = new qq.maps.Map(container, {
+                // 地图的中心地理坐标
+                center: new qq.maps.LatLng(39.916527, 116.397128),
+                zoom: 13,
+                disableDefaultUI: true    //禁止所有控件
+            });
+          //创建自定义控件
+            var middleControl = document.createElement("div");
+
+            var height = document.body.scrollHeight;
+            var marginTop = height / 2;       //因为此div在页面中只用了一次且以后不会改变，所以写了数值，如果是不确定的，获取到高度放着这里就可以
+            middleControl.style.margin = marginTop+"px auto";
+			middleControl.style.position="relative";
+			middleControl.style.width="36px";
+            middleControl.style.height="36px";
+			middleControl.style.zIndex="100000";
+           middleControl.innerHTML ='<img src="https://www.cdlhome.com.sg/mobile_assets/images/icon-location.png" />';
+		   document.getElementById("container").appendChild(middleControl);
+            //返回地图当前中心点地理坐标
+            centerDiv.innerHTML = "latlng:" + map.getCenter();
+            //当地图中心属性更改时触发事件
+            qq.maps.event.addListener(map, 'center_changed', function() {
+                centerDiv.innerHTML = "latlng:" + map.getCenter();
+            });
+        }
+    </script>
+</body>
+
+</html>

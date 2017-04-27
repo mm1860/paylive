@@ -1,0 +1,43 @@
+﻿@model List<paylive.Console.DbContext.Receivers>
+@{
+    ViewData["Title"] = "Contact";
+    Layout = null;
+}
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1" />
+    <!-- head 中 -->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>
+
+    </title>
+    <!-- body 最后 -->
+
+</head>
+<body style="text-align: center">
+    <form action="@Url.Action("Contact", "Home")" method="post">
+        <p>
+            手机号:<input type="text" id="mobile" name="mobile" style="height: 50px; width: 100px" />
+        </p>
+        <p>
+            飞信号:<input type="text" id="imno" name="imno" style="height: 50px; width: 100px" />
+        </p>
+        <p>
+            <input type="submit" value="提交" />
+        </p>
+    </form>
+    @{
+        if (Model != null)
+        {
+            foreach (var item in Model)
+            {
+                <p>mobile:@(item.Mobile) | imno:@(item.ImNo)</p>
+            }
+        }
+    }
+
+</body>
+</html>

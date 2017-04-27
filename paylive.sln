@@ -1,0 +1,67 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{6411317E-F3C0-421F-9BB0-E8C24B8845E6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{40596224-473A-4542-9CBD-1858ECADC24A}"
+	ProjectSection(SolutionItems) = preProject
+		global.json = global.json
+	EndProjectSection
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "paylive", "src\paylive\paylive.xproj", "{4AA69FBF-30F5-40B7-BF70-E6FE104DD0EE}"
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "paylive.core", "src\paylive.core\paylive.core.xproj", "{70397F1B-A14E-4FCC-BA02-9AE105656E6C}"
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "paylive.alipay", "src\paylive.alipay\paylive.alipay.xproj", "{F7E28280-1DBC-49F8-803A-A4C27F20A264}"
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "paylive.wxpay", "src\paylive.wxpay\paylive.wxpay.xproj", "{943D3019-B95B-4B12-964B-C5B65FB46539}"
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "paylive.Console", "src\paylive.Console\paylive.Console.xproj", "{A4C419FF-5CDF-4FD6-ACB4-2B2765BF6796}"
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "paylive.sms", "src\paylive.sms\paylive.sms.xproj", "{33D23CCD-2A5D-4005-A8F5-30603C503B92}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4AA69FBF-30F5-40B7-BF70-E6FE104DD0EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4AA69FBF-30F5-40B7-BF70-E6FE104DD0EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4AA69FBF-30F5-40B7-BF70-E6FE104DD0EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4AA69FBF-30F5-40B7-BF70-E6FE104DD0EE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{70397F1B-A14E-4FCC-BA02-9AE105656E6C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{70397F1B-A14E-4FCC-BA02-9AE105656E6C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{70397F1B-A14E-4FCC-BA02-9AE105656E6C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{70397F1B-A14E-4FCC-BA02-9AE105656E6C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F7E28280-1DBC-49F8-803A-A4C27F20A264}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F7E28280-1DBC-49F8-803A-A4C27F20A264}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F7E28280-1DBC-49F8-803A-A4C27F20A264}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F7E28280-1DBC-49F8-803A-A4C27F20A264}.Release|Any CPU.Build.0 = Release|Any CPU
+		{943D3019-B95B-4B12-964B-C5B65FB46539}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{943D3019-B95B-4B12-964B-C5B65FB46539}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{943D3019-B95B-4B12-964B-C5B65FB46539}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{943D3019-B95B-4B12-964B-C5B65FB46539}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A4C419FF-5CDF-4FD6-ACB4-2B2765BF6796}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A4C419FF-5CDF-4FD6-ACB4-2B2765BF6796}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A4C419FF-5CDF-4FD6-ACB4-2B2765BF6796}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A4C419FF-5CDF-4FD6-ACB4-2B2765BF6796}.Release|Any CPU.Build.0 = Release|Any CPU
+		{33D23CCD-2A5D-4005-A8F5-30603C503B92}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{33D23CCD-2A5D-4005-A8F5-30603C503B92}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{33D23CCD-2A5D-4005-A8F5-30603C503B92}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{33D23CCD-2A5D-4005-A8F5-30603C503B92}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{4AA69FBF-30F5-40B7-BF70-E6FE104DD0EE} = {6411317E-F3C0-421F-9BB0-E8C24B8845E6}
+		{70397F1B-A14E-4FCC-BA02-9AE105656E6C} = {6411317E-F3C0-421F-9BB0-E8C24B8845E6}
+		{F7E28280-1DBC-49F8-803A-A4C27F20A264} = {6411317E-F3C0-421F-9BB0-E8C24B8845E6}
+		{943D3019-B95B-4B12-964B-C5B65FB46539} = {6411317E-F3C0-421F-9BB0-E8C24B8845E6}
+		{A4C419FF-5CDF-4FD6-ACB4-2B2765BF6796} = {6411317E-F3C0-421F-9BB0-E8C24B8845E6}
+		{33D23CCD-2A5D-4005-A8F5-30603C503B92} = {6411317E-F3C0-421F-9BB0-E8C24B8845E6}
+	EndGlobalSection
+EndGlobal

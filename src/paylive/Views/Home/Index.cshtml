@@ -1,0 +1,10 @@
+﻿@model dynamic
+
+@{
+    ViewBag.Title = "title";
+    Layout = null;
+}
+
+<h2><a href="@Url.Action("Index","System")">管理</a></h2>
+<h2><a href="@Url.Action("NativePay","Wx")">微信扫码支付</a></h2>
+<h2><a href="@Url.Action("Index","Ali")">支付宝网页支付</a></h2>

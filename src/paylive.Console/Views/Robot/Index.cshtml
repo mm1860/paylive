@@ -1,0 +1,30 @@
+﻿@{
+    ViewData["Title"] = "Index";
+    Layout = null;
+}
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1" />
+    <!-- head 中 -->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>
+
+    </title>
+    <!-- body 最后 -->
+
+</head>
+<body style="text-align: center">
+    <p><a href="@Url.Action("GetSmsPwd","Robot")">获取验证码</a></p>
+    <form action="@Url.Action("Login", "Robot")" method="post">
+        <p>
+            验证码:<input type="text" id="pwd" name="pwd" style="height: 50px; width: 100px" />
+        </p>
+        <p>
+            <input type="submit" value="登录" style="height: 50px; width: 100px" />
+        </p>
+    </form>
+</body>
+</html>

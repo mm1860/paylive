@@ -1,0 +1,44 @@
+﻿@model List<paylive.Console.DbContext.Receivers>
+@{
+    ViewData["Title"] = "Index";
+    Layout = null;
+}
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1"/>
+    <!-- head 中 -->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>
+
+    </title>
+    <!-- body 最后 -->
+
+</head>
+<body style="text-align: center">
+<p>
+    <a href="@Url.Action("Contact", "Home")">添加测试商户</a>
+</p>
+<form action="@Url.Action("Index", "Home")" method="post">
+
+    <p>
+        选择商户:<select id="imno" name="imno">
+            @{
+                foreach (var item in Model)
+                {
+                    <option value="@item.ImNo">@item.Mobile</option>
+                }
+            }
+        </select>
+    </p>
+    <p>
+        短信内容:<input type="text" id="msg" name="msg" style="height: 50px; width: 100px"/>
+    </p>
+    <p>
+        <input type="submit" value="发送短信"/>
+    </p>
+</form>
+</body>
+</html>
