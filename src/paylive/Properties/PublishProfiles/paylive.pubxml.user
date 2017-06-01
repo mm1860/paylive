@@ -6,6 +6,6 @@
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <TimeStampOfAssociatedLegacyPublishXmlFile />
-    <_PublishTargetUrl>D:\paylive\hwcloud\paylive\src\paylive\.\bin\Release\PublishOutput</_PublishTargetUrl>
+    <_PublishTargetUrl>D:\paylive\github\paylive\src\paylive\.\bin\Debug\PublishOutput</_PublishTargetUrl>
   </PropertyGroup>
 </Project>

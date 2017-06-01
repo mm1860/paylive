@@ -13,10 +13,10 @@
         * KEY：商户支付密钥，参考开户邮件设置（必须配置）
         * APPSECRET：公众帐号secert（仅JSAPI支付的时候需要配置）
         */
-        public const string APPID = "必须配置";
-        public const string MCHID = "必须配置";
-        public const string KEY = "必须配置";
-        public const string APPSECRET = "必须配置";
+        public const string APPID = "wxa2b9e96d321ee1b896";
+        public const string MCHID = "148050329202";
+        public const string KEY = "12312";
+        public const string APPSECRET = "aa546c5365238f71d12b1ce415eda31039";
 
         //=======【证书路径设置】===================================== 
         /* 证书路径,注意应该填写绝对路径（仅退款、撤销订单时需要）
@@ -28,7 +28,7 @@
         //=======【支付结果通知url】===================================== 
         /* 支付结果通知回调url，用于商户接收支付结果
         */
-        public const string NOTIFY_URL = "http://paysdk.weixin.qq.com/example/ResultNotifyPage.aspx";
+        public const string NOTIFY_URL = "http://pay.beijing123456.com/wx/Nodify";
 
         //=======【商户系统后台机器IP】===================================== 
         /* 此参数可手动配置也可在程序中自动获取
@@ -49,6 +49,6 @@
         //=======【日志级别】===================================
         /* 日志等级，0.不输出日志；1.只输出错误信息; 2.输出错误和正常信息; 3.输出错误信息、正常信息和调试信息
         */
-        public const int LOG_LEVENL = 0;
+        public const int LOG_LEVENL = 3;
     }
 }

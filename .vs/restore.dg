@@ -1,1 +1,6 @@
-#:D:\paylive\hwcloud\paylive\src\paylive.Console\paylive.Console.xproj
+#:D:\paylive\github\paylive\src\paylive\paylive.xproj
+D:\paylive\github\paylive\src\paylive\paylive.xproj|D:\paylive\github\paylive\src\paylive.alipay\paylive.alipay.xproj
+D:\paylive\github\paylive\src\paylive\paylive.xproj|D:\paylive\github\paylive\src\paylive.core\paylive.core.xproj
+D:\paylive\github\paylive\src\paylive\paylive.xproj|D:\paylive\github\paylive\src\paylive.wxpay\paylive.wxpay.xproj
+D:\paylive\github\paylive\src\paylive.alipay\paylive.alipay.xproj|D:\paylive\github\paylive\src\paylive.core\paylive.core.xproj
+D:\paylive\github\paylive\src\paylive.wxpay\paylive.wxpay.xproj|D:\paylive\github\paylive\src\paylive.core\paylive.core.xproj

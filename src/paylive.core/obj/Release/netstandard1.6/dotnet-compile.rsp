@@ -1,5 +1,5 @@
---temp-output:D:\paylive\hwcloud\paylive\src\paylive.core\obj\Release\netstandard1.6\
---out:D:\paylive\hwcloud\paylive\src\paylive.core\bin\Release\netstandard1.6\paylive.core.dll
+--temp-output:D:\paylive\github\paylive\src\paylive.core\obj\Release\netstandard1.6\
+--out:D:\paylive\github\paylive\src\paylive.core\bin\Release\netstandard1.6\paylive.core.dll
 --define:RELEASE
 --define:TRACE
 --define:NETSTANDARD1_6
@@ -56,5 +56,5 @@
 --reference:C:\Users\冯明刚\.nuget\packages\System.Threading.Timer\4.0.1\ref\netstandard1.2\System.Threading.Timer.dll
 --reference:C:\Users\冯明刚\.nuget\packages\System.Xml.ReaderWriter\4.0.11\ref\netstandard1.3\System.Xml.ReaderWriter.dll
 --reference:C:\Users\冯明刚\.nuget\packages\System.Xml.XDocument\4.0.11\ref\netstandard1.3\System.Xml.XDocument.dll
-D:\paylive\hwcloud\paylive\src\paylive.core\Plug.cs
-D:\paylive\hwcloud\paylive\src\paylive.core\Properties\AssemblyInfo.cs
+D:\paylive\github\paylive\src\paylive.core\Plug.cs
+D:\paylive\github\paylive\src\paylive.core\Properties\AssemblyInfo.cs

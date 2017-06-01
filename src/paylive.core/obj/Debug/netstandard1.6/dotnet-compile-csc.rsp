@@ -8,8 +8,8 @@
 -debug:full
 -nostdlib
 -nologo
-"D:\paylive\hwcloud\paylive\src\paylive.core\obj\Debug\netstandard1.6\dotnet-compile.assemblyinfo.cs"
--out:"D:\paylive\hwcloud\paylive\src\paylive.core\bin\Debug\netstandard1.6\paylive.core.dll"
+"D:\paylive\github\paylive\src\paylive.core\obj\Debug\netstandard1.6\dotnet-compile.assemblyinfo.cs"
+-out:"D:\paylive\github\paylive\src\paylive.core\bin\Debug\netstandard1.6\paylive.core.dll"
 -r:"C:\Users\冯明刚\.nuget\packages\Microsoft.Win32.Primitives\4.0.1\ref\netstandard1.3\Microsoft.Win32.Primitives.dll"
 -r:"C:\Users\冯明刚\.nuget\packages\System.AppContext\4.1.0\ref\netstandard1.6\System.AppContext.dll"
 -r:"C:\Users\冯明刚\.nuget\packages\System.Collections\4.3.0\ref\netstandard1.3\System.Collections.dll"
@@ -54,5 +54,5 @@
 -r:"C:\Users\冯明刚\.nuget\packages\System.Threading.Timer\4.0.1\ref\netstandard1.2\System.Threading.Timer.dll"
 -r:"C:\Users\冯明刚\.nuget\packages\System.Xml.ReaderWriter\4.0.11\ref\netstandard1.3\System.Xml.ReaderWriter.dll"
 -r:"C:\Users\冯明刚\.nuget\packages\System.Xml.XDocument\4.0.11\ref\netstandard1.3\System.Xml.XDocument.dll"
-"D:\paylive\hwcloud\paylive\src\paylive.core\Plug.cs"
-"D:\paylive\hwcloud\paylive\src\paylive.core\Properties\AssemblyInfo.cs"
+"D:\paylive\github\paylive\src\paylive.core\Plug.cs"
+"D:\paylive\github\paylive\src\paylive.core\Properties\AssemblyInfo.cs"
